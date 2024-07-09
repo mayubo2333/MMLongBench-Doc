@@ -8,7 +8,7 @@ from PIL import Image
 Image.MAX_IMAGE_PIXELS = None
 from tqdm import tqdm
 
-from eval.eval_score import eval_score, eval_acc_and_f1
+from eval.eval_score import eval_score, eval_acc_and_f1, show_results
 from eval.extract_answer import extract_answer
 
 
@@ -117,6 +117,8 @@ def load_questions(args):
         
         with open(args.output_path, 'w') as f:
             json.dump(samples, f)
+    
+    show_results(samples, show_path=re.sub("\.json$", ".txt", args.output_path))
 
 
 if __name__=="__main__":

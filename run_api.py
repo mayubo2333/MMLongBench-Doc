@@ -10,7 +10,7 @@ from uuid import uuid4
 from tqdm import tqdm
 
 from eval.extract_answer import extract_answer
-from eval.eval_score import eval_score, eval_acc_and_f1
+from eval.eval_score import eval_score, eval_acc_and_f1, show_results
 
 
 def encode_image_to_base64(img):
@@ -170,6 +170,5 @@ if __name__=="__main__":
         
         with open(args.output_path, 'w') as f:
             json.dump(samples, f)
-        
-        with open(args.output_path, 'w') as f:
-            json.dump(samples, f)
+    
+    show_results(samples, show_path=re.sub("\.json$", ".txt", args.output_path))
