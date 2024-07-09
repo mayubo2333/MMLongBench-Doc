@@ -14,8 +14,6 @@ from eval.eval_score import eval_score
 
 
 def encode_image_to_base64(img):
-    # if target_size == -1, will not do resizing
-    # else, will set the max_size ot (target_size, target_size)
     if img.mode in ('RGBA', 'P'):
         img = img.convert('RGB')
     tmp = os.path.join('/tmp', str(uuid4()) + '.jpg')

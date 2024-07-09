@@ -1,5 +1,8 @@
 #!/bin/bash
 
+mkdir -p ./results
+mkdir -p ./tmp
+
 if [ -z "$OPENAI_API_KEY" ]; then
   echo "Error. You do not set the OPENAI_API_KEY. It is necessary for the answer extractor for evaluation."
   exit 1
