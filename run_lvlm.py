@@ -8,7 +8,7 @@ from PIL import Image
 Image.MAX_IMAGE_PIXELS = None
 from tqdm import tqdm
 
-from eval.eval_score import eval_score
+from eval.eval_score import eval_score, eval_acc_and_f1
 from eval.extract_answer import extract_answer
 
 
@@ -80,8 +80,7 @@ def load_questions(args):
 
     model, get_response_concat = load_model(args.model_name, args.model_cached_path)
 
-    all_score = 0.0
-    for cnt, sample in enumerate(tqdm(samples)):
+    for sample in tqdm(samples):
         if "score" in sample:
             score = sample["score"]
         else:
@@ -108,13 +107,13 @@ def load_questions(args):
             sample["pred"] = pred_ans
             sample["score"] = score
 
-        all_score += score
-        avg_score = all_score/(cnt+1)
+        acc, f1 = eval_acc_and_f1(samples)
         print("--------------------------------------")
         print("Question: {}".format(sample["question"]))
         print("Response: {}".format(sample["response"]))
         print("Gt: {}\tPred: {}\tScore: {}".format(sample["answer"], sample["pred"], sample["score"]))
-        print("Avg score: {}".format(avg_score))
+        print("Avg acc: {}".format(acc))
+        print("Avg f1: {}".format(f1))
         
         with open(args.output_path, 'w') as f:
             json.dump(samples, f)

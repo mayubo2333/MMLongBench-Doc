@@ -10,7 +10,7 @@ from uuid import uuid4
 from tqdm import tqdm
 
 from eval.extract_answer import extract_answer
-from eval.eval_score import eval_score
+from eval.eval_score import eval_score, eval_acc_and_f1
 
 
 def encode_image_to_base64(img):
@@ -117,8 +117,7 @@ if __name__=="__main__":
         with open(args.input_path, 'r') as f:
             samples = json.load(f)
 
-    all_score = 0.0
-    for cnt, sample in enumerate(tqdm(samples)):
+    for sample in tqdm(samples):
         if "score" in sample:
             score = sample["score"]
         else:
@@ -161,13 +160,16 @@ if __name__=="__main__":
             sample["pred"] = pred_ans
             sample["score"] = score
 
-        all_score += score
-        avg_score = all_score/(cnt+1)
+        acc, f1 = eval_acc_and_f1(samples)
         print("--------------------------------------")
         print("Question: {}".format(sample["question"]))
         print("Response: {}".format(sample["response"]))
         print("Gt: {}\tPred: {}\tScore: {}".format(sample["answer"], sample["pred"], sample["score"]))
-        print("Avg score: {}".format(avg_score))
+        print("Avg acc: {}".format(acc))
+        print("Avg f1: {}".format(f1))
+        
+        with open(args.output_path, 'w') as f:
+            json.dump(samples, f)
         
         with open(args.output_path, 'w') as f:
             json.dump(samples, f)
