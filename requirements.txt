@@ -1,0 +1,10 @@
+transformers==4.41.2
+accelerate==0.31.0
+flash-attn==2.5.9.post1
+openai==1.14
+tqdm
+peft
+pymupdf
+sentencepiece
+einops
+timm
