@@ -39,7 +39,7 @@
 <p align="center">
   <p>
 The automatic understanding of lengthy documents (Long-context Document Understanding; DU) stands as a long-standing task in urgent and practical needs. Although many LVLMs now claim (and show promising cases) their capabilities on long-context DU, there lacks a unified and quantitative evaluation of existing models due to the absence of related benchmark.<br>
-To bridge this gap, we construct <strong>MMLongBench-Doc</strong> which comprises 130 documents and 1062 qustions (each accompanied by a short, deterministic reference answer and detailed meta information.). The documents have an average of 49 pages and 20,971 tokens, cover 7 diverse domains, and are PDF-formatted with rich layouts and multi-modal components. The questions are either curated from existing datasets or newly-annotated by expert-level annotators. Towards a comprehensive evaluation, the questions cover different sources like text, table, chart, image, etc., and different locations (page index) of the documents. Notably, 33.2% questions are cross-page questions necessitating comprehension and reasoning on evidences across multiple pages. And 22.8% questions are designed to be unanswerable for reducing the shortcuts in this benchmark and detecting LVLMs' hallucinations.
+To bridge this gap, we construct <strong>MMLongBench-Doc</strong> which comprises 135 documents and 1091 qustions (each accompanied by a short, deterministic reference answer and detailed meta information.). The documents have an average of 47.5 pages and 21,214 tokens, cover 7 diverse domains, and are PDF-formatted with rich layouts and multi-modal components. The questions are either curated from existing datasets or newly-annotated by expert-level annotators. Towards a comprehensive evaluation, the questions cover different sources like text, table, chart, image, etc., and different locations (page index) of the documents. Notably, 33.0% questions are cross-page questions necessitating comprehension and reasoning on evidences across multiple pages. And 22.5% questions are designed to be unanswerable for reducing the shortcuts in this benchmark and detecting LVLMs' hallucinations.
   </p>
   <a href="">
     <img src="asset/top_figure.png" alt="Logo" width="100%">
@@ -52,8 +52,8 @@ To bridge this gap, we construct <strong>MMLongBench-Doc</strong> which comprise
 
 ## 💡 Highlights
 - 🔥 **Multi-modality**: All selected documents are PDF-formatted with rich layouts and multi-modal components including text, table, chart and image. We annotate questions carefully from these multi-modal evidences.
-- 🔥 **Long-context**: Each document has an average of 49.4 pages and 20,971 tokens. Additionally, 33.2% of the questions are cross-page questions which necessitate the information collection and reasoning over multiple pages.
-- 🔥 **Challenging**: Experiments on 14 LVLMs demonstrate that long-context document understanding greatly challenges current models. Even the best-performing LVLM, GPT-4o, achieves an overall F1 score of only 42.7%.
+- 🔥 **Long-context**: Each document has an average of 47.5 pages and 21,214 tokens. Additionally, 33.0% of the questions are cross-page questions which necessitate the information collection and reasoning over multiple pages.
+- 🔥 **Challenging**: Experiments on 14 LVLMs demonstrate that long-context document understanding greatly challenges current models. Even the best-performing LVLM, GPT-4o, achieves an overall F1 score of only 44.9%.
 
 ## Dataset
 We save our benchmark, including both questions and documents, in `./data`.
