@@ -47,7 +47,7 @@ To bridge this gap, we construct <strong>MMLongBench-Doc</strong> which comprise
 <br>
 
 ## 📢 News
-- 🚀 [07/2024] We will add MMLongBench-Doc to evaluation toolkit [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) soon, providing a highly convenient testing solution!
+- 🚀 [07/2024] We have integrated MMLongBench-Doc to evaluation toolkit [VLMEvalKit](https://github.com/open-compass/VLMEvalKit), providing a highly convenient testing solution!
 - 🚀 [06/2024] We upload MMLongBench-Doc to huggingface.
 
 ## 💡 Highlights
