@@ -126,7 +126,7 @@ def eval_score(gt, pred, answer_type):
         except:
             pred = ""
         score = is_float_equal(gt, pred, include_percentage=True, is_close=True)
-    elif answer_type=="Str":
+    elif answer_type in ["Str", "None"]:
         gt = get_clean_string(gt)
         pred = get_clean_string(pred)
         if is_exact_match(gt):
@@ -186,14 +186,14 @@ def show_results(samples, show_path=None):
 
         #####################
         acc_single_page, _ = eval_acc_and_f1([sample for sample in samples if len(sample["evidence_pages"])==1])
-        acc_multi_page, _ = eval_acc_and_f1([sample for sample in samples if len(sample["evidence_pages"])>1])
+        acc_multi_page, _ = eval_acc_and_f1([sample for sample in samples if len(sample["evidence_pages"])!=1 and sample["answer"]!="Not answerable"])
         acc_neg, _ = eval_acc_and_f1([sample for sample in samples if sample["answer"]=="Not answerable"])
 
         f.write("Single-page | Accuracy: {} | Question Number: {}\n".format(
             acc_single_page, len([sample for sample in samples if len(sample["evidence_pages"])==1])
         ))
         f.write("Cross-page | Accuracy: {} | Question Number: {}\n".format(
-            acc_multi_page, len([sample for sample in samples if len(sample["evidence_pages"])>1])
+            acc_multi_page, len([sample for sample in samples if len(sample["evidence_pages"])!=1 and sample["answer"]!="Not answerable"])
         ))
         f.write("Unanswerable | Accuracy: {} | Question Number: {}\n".format(
             acc_neg, len([sample for sample in samples if sample["answer"]=="Not answerable"])
