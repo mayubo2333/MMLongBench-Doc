@@ -659,11 +659,11 @@
     {
         "doc_id": "2401.18059v1.pdf",
         "doc_type": "Academic paper",
-        "question": "In Figure 1's demonstration, what are the color of the nodes that appear in all three clusters?",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
+        "question": "In Figure 1's demonstration, what are the color of the nodes that appear in all three clusters? Enumerate all of them them in a list (return an empty list if no such colors).",
+        "answer": "[]",
+        "evidence_pages": "[2]",
+        "evidence_sources": "['Figure']",
+        "answer_format": "List"
     },
     {
         "doc_id": "2401.18059v1.pdf",
@@ -2415,10 +2415,10 @@
         "doc_id": "caltraincapacitymountainview1-150701205750-lva1-app6891_95.pdf",
         "doc_type": "Research report / Introduction",
         "question": "How many figures of airplanes are appeared in the documents?",
-        "answer": "Not answerable",
+        "answer": "0",
         "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
+        "evidence_sources": "['Figure']",
+        "answer_format": "Int"
     },
     {
         "doc_id": "caltraincapacitymountainview1-150701205750-lva1-app6891_95.pdf",
@@ -2479,7 +2479,7 @@
         "doc_type": "Tutorial/Workshop",
         "question": "How many shapes and colors of the shapes in the Slide 9? Please write the answer in the list format, e.g., [1,2]",
         "answer": "[2, 2]",
-        "evidence_pages": "[5]",
+        "evidence_pages": "[9]",
         "evidence_sources": "['Figure', 'Pure-text (Plain-text)']",
         "answer_format": "List"
     },
@@ -2487,10 +2487,10 @@
         "doc_id": "digitalmeasurementframework22feb2011v6novideo-110221233835-phpapp01_95.pdf",
         "doc_type": "Tutorial/Workshop",
         "question": "How many shapes and colors of the shapes in the Slide 5? Please write the answer in the list format, e.g., [\"1\",\"2\"]",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
+        "answer": "[0, 0]",
+        "evidence_pages": "[5]",
+        "evidence_sources": "['Figure', 'Pure-text (Plain-text)']",
+        "answer_format": "List"
     },
     {
         "doc_id": "digitalmeasurementframework22feb2011v6novideo-110221233835-phpapp01_95.pdf",
@@ -2541,10 +2541,10 @@
         "doc_id": "2310.07609v1.pdf",
         "doc_type": "Academic paper",
         "question": "How many numbers with purple color are mentioned in the example figure of question-guidue reasoning?",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
+        "answer": "0",
+        "evidence_pages": "[1]",
+        "evidence_sources": "['Figure', 'Pure-text (Plain-text)']",
+        "answer_format": "Int"
     },
     {
         "doc_id": "2310.07609v1.pdf",
@@ -2585,7 +2585,7 @@
     {
         "doc_id": "2310.07609v1.pdf",
         "doc_type": "Academic paper",
-        "question": "How many prompts instruction examples are listed in the main body of the paper? Please writhe down the answer in float format.",
+        "question": "How many prompts instruction examples are listed in the main body of the paper? Please writhe down the answer in integer format.",
         "answer": "4",
         "evidence_pages": "[3, 4]",
         "evidence_sources": "['Generalized-text (Layout)', 'Pure-text (Plain-text)']",
@@ -2685,10 +2685,10 @@
         "doc_id": "2305.13186v3.pdf",
         "doc_type": "Academic paper",
         "question": "How many green and grey triangles in the first figure of the paper? Please list the numbers in the list format by descending order. e.g., [\"2\",\"1\"]",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
+        "answer": "['0', '0']",
+        "evidence_pages": "[2]",
+        "evidence_sources": "['Figure', 'Pure-text (Plain-text)']",
+        "answer_format": "List"
     },
     {
         "doc_id": "2305.13186v3.pdf",
@@ -2837,7 +2837,7 @@
     {
         "doc_id": "bdf54dxa.pdf",
         "doc_type": "Guidebook",
-        "question": "How many figures in page 13 contains the left arrows? Write down the number in float format with 2 decimals.",
+        "question": "How many figures in page 13 contains the left arrows? Write down the number in integer format.",
         "answer": "2",
         "evidence_pages": "[14]",
         "evidence_sources": "['Figure', 'Pure-text (Plain-text)']",
@@ -2846,16 +2846,16 @@
     {
         "doc_id": "bdf54dxa.pdf",
         "doc_type": "Guidebook",
-        "question": "How many figures in page 13 contains the up arrows? Write down the number in float format with 2 decimals.",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
+        "question": "How many figures in page 13 contains the up arrows? Write down the number in integer format.",
+        "answer": "0",
+        "evidence_pages": "[14]",
+        "evidence_sources": "['Figure', 'Pure-text (Plain-text)']",
+        "answer_format": "Int"
     },
     {
         "doc_id": "bdf54dxa.pdf",
         "doc_type": "Guidebook",
-        "question": "In the adjusting the upper basket step, how many up arrows are contained in the figures? Write down the answers in float format with 1 decimal.",
+        "question": "In the adjusting the upper basket step, how many up arrows are contained in the figures? Write down the answers in integer format.",
         "answer": "1",
         "evidence_pages": "[14, 15]",
         "evidence_sources": "['Generalized-text (Layout)', 'Pure-text (Plain-text)', 'Figure']",
@@ -2892,10 +2892,10 @@
         "doc_id": "obs-productdesc-en.pdf",
         "doc_type": "Guidebook",
         "question": "How many \"subjects\" with black color does the figure in Page 2 contains?",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
+        "answer": "0",
+        "evidence_pages": "[6]",
+        "evidence_sources": "['Figure', 'Pure-text (Plain-text)']",
+        "answer_format": "Int"
     },
     {
         "doc_id": "obs-productdesc-en.pdf",
@@ -3062,7 +3062,7 @@
     {
         "doc_id": "welcome-to-nus.pdf",
         "doc_type": "Brochure",
-        "question": "How many people are there in the Figure from page 19 to page 21? Please write the answer in float format.",
+        "question": "How many people are there in the Figure from page 19 to page 21? Please write the answer in integer format.",
         "answer": "8",
         "evidence_pages": "[11, 12]",
         "evidence_sources": "['Generalized-text (Layout)', 'Figure']",
@@ -3576,10 +3576,10 @@
         "doc_id": "e79deb02a0c0e87511080836c5d4347b.pdf",
         "doc_type": "Administration/Industry file",
         "question": "How many strengths and weaknesses are metioned in Appendix E?",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
+        "answer": "['0', '0']",
+        "evidence_pages": "[17]",
+        "evidence_sources": "['Pure-text (Plain-text)']",
+        "answer_format": "List"
     },
     {
         "doc_id": "e79deb02a0c0e87511080836c5d4347b.pdf",
@@ -3675,10 +3675,10 @@
         "doc_id": "chapter8-geneticscompatibilitymode-141214140247-conversion-gate02_95.pdf",
         "doc_type": "Tutorial/Workshop",
         "question": "How many cats appear in the slide?",
-        "answer": "Not answerable",
+        "answer": "0",
         "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
+        "evidence_sources": "['Figure']",
+        "answer_format": "Int"
     },
     {
         "doc_id": "chapter8-geneticscompatibilitymode-141214140247-conversion-gate02_95.pdf",
@@ -4053,10 +4053,10 @@
         "doc_id": "RAR.pdf",
         "doc_type": "Academic paper",
         "question": "How many GPT-4o examples are listed in the paper?",
-        "answer": "Not answerable",
+        "answer": "0",
         "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
+        "evidence_sources": "['Figure']",
+        "answer_format": "Int"
     },
     {
         "doc_id": "RAR.pdf",
@@ -5096,7 +5096,7 @@
     {
         "doc_id": "12-15-15-ISIS-and-terrorism-release-final.pdf",
         "doc_type": "Research report / Introduction",
-        "question": "How many bar charts are in the report?Please write the answer in float format.",
+        "question": "How many bar charts are in the report?Please write the answer in integer format.",
         "answer": "1",
         "evidence_pages": "[3]",
         "evidence_sources": "['Generalized-text (Layout)', 'Chart']",
@@ -5177,7 +5177,7 @@
     {
         "doc_id": "PS_2018.01.09_STEM_FINAL.pdf",
         "doc_type": "Research report / Introduction",
-        "question": "What is the percentage of workers employed in private, for-profit sectors in the field where the oldest woman advising on increasing diversity in STEM is employed? Please write the answer into float format.",
+        "question": "What is the percentage of workers employed in private, for-profit sectors in the field where the oldest woman advising on increasing diversity in STEM is employed? Please write the answer into integer format.",
         "answer": "58%",
         "evidence_pages": "[3, 29, 84]",
         "evidence_sources": "['Pure-text (Plain-text)', 'Chart']",
@@ -5384,7 +5384,7 @@
     {
         "doc_id": "3276a5b991c49cf5f9a4af0f7d6fce67.pdf",
         "doc_type": "Administration/Industry file",
-        "question": "What is the sum of numbers that are written manually on the page 15 and page 16? Write the answer in the float format.",
+        "question": "What is the sum of numbers that are written manually on the page 15 and page 16? Write the answer in the integer format.",
         "answer": "19",
         "evidence_pages": "[15, 16]",
         "evidence_sources": "['Generalized-text (Layout)', 'Figure']",
@@ -5402,7 +5402,7 @@
     {
         "doc_id": "3276a5b991c49cf5f9a4af0f7d6fce67.pdf",
         "doc_type": "Administration/Industry file",
-        "question": "How many signatures are appeared on the page 15 and page 16? Write the answer in the float format.",
+        "question": "How many signatures are appeared on the page 15 and page 16? Write the answer in the integer format.",
         "answer": "2",
         "evidence_pages": "[15, 16]",
         "evidence_sources": "['Generalized-text (Layout)', 'Figure']",
@@ -5492,15 +5492,6 @@
     {
         "doc_id": "earthlinkweb-150213112111-conversion-gate02_95.pdf",
         "doc_type": "Research report / Introduction",
-        "question": "How many girls in total are there in the slides? Please list the page number in the list format, e.g., [\"1\",\"2\"]",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
-    },
-    {
-        "doc_id": "earthlinkweb-150213112111-conversion-gate02_95.pdf",
-        "doc_type": "Research report / Introduction",
         "question": "What percentage of the second largest demographic segment of respondents reported not conducting promotions to customers over Wi-Fi in 2015?",
         "answer": "85%",
         "evidence_pages": "[9, 14]",
@@ -5538,10 +5529,10 @@
         "doc_id": "bariumswallowpresentation-090810084400-phpapp01_95.pdf",
         "doc_type": "Tutorial/Workshop",
         "question": "How many words for parts that start with 'X' are in the figure on slide 11?",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
+        "answer": "0",
+        "evidence_pages": "[11]",
+        "evidence_sources": "['Pure-text (Plain-text)', 'Figure']",
+        "answer_format": "Int"
     },
     {
         "doc_id": "bariumswallowpresentation-090810084400-phpapp01_95.pdf",
@@ -5744,7 +5735,7 @@
     {
         "doc_id": "2023.acl-long.386.pdf",
         "doc_type": "Academic paper",
-        "question": "How many complete in-context examples are shown in the figure at the bottom of page 6985? Please write down the answer with float format.",
+        "question": "How many complete in-context examples are shown in the figure at the bottom of page 6985? Please write down the answer with integer format.",
         "answer": "Not answerable",
         "evidence_pages": "[]",
         "evidence_sources": "[]",
@@ -5834,7 +5825,7 @@
     {
         "doc_id": "tacl_a_00660.pdf",
         "doc_type": "Academic paper",
-        "question": "For the papers that adopted the Model Debate strategy in Table 2, how many of them are not mentioned in Section 3.4? Write the answer in float format.",
+        "question": "For the papers that adopted the Model Debate strategy in Table 2, how many of them are not mentioned in Section 3.4? Write the answer in integer format.",
         "answer": "2",
         "evidence_pages": "[6, 10]",
         "evidence_sources": "['Table', 'Pure-text (Plain-text)']",
@@ -6014,7 +6005,7 @@
     {
         "doc_id": "owners-manual-2170416.pdf",
         "doc_type": "Guidebook",
-        "question": "How many steps are required to replace the grille? Write the answer in float format.",
+        "question": "How many steps are required to replace the grille? Write the answer in integer format.",
         "answer": "3",
         "evidence_pages": "[17]",
         "evidence_sources": "['Pure-text (Plain-text)']",
@@ -6059,11 +6050,11 @@
     {
         "doc_id": "Campaign_038_Introducing_AC_Whitepaper_v5e.pdf",
         "doc_type": "Brochure",
-        "question": "How many cameras outside the China area does the figure at Page 19 has? Write the answer in float format.",
-        "answer": "3.0",
+        "question": "How many cameras outside the China area does the figure at Page 19 has? Write the answer in integer format.",
+        "answer": "3",
         "evidence_pages": "[22]",
         "evidence_sources": "['Generalized-text (Layout)', 'Figure']",
-        "answer_format": "Float"
+        "answer_format": "Int"
     },
     {
         "doc_id": "Campaign_038_Introducing_AC_Whitepaper_v5e.pdf",
@@ -6849,15 +6840,6 @@
         "answer_format": "Int"
     },
     {
-        "doc_id": "2306.05425v1.pdf",
-        "doc_type": "Academic paper",
-        "question": "How many line plots are shown in the slides?",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
-    },
-    {
         "doc_id": "2210.02442v1.pdf",
         "doc_type": "Academic paper",
         "question": "How many figures convey similar messages as the first figure?",
@@ -7018,15 +7000,6 @@
         "evidence_pages": "[4]",
         "evidence_sources": "['Figure']",
         "answer_format": "Str"
-    },
-    {
-        "doc_id": "Sinopolis-Chengdu.pdf",
-        "doc_type": "Guidebook",
-        "question": "What is the coldest month in Sichuan?",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
     },
     {
         "doc_id": "Sinopolis-Chengdu.pdf",
@@ -8273,7 +8246,7 @@
     {
         "doc_id": "PWC_opportunity_of_lifetime.pdf",
         "doc_type": "Brochure",
-        "question": "Who is Ibrahim? ",
+        "question": "What is the position of Ibrahim?",
         "answer": "Core Assurance",
         "evidence_pages": "[17]",
         "evidence_sources": "['Pure-text (Plain-text)', 'Figure']",
@@ -8282,7 +8255,7 @@
     {
         "doc_id": "PWC_opportunity_of_lifetime.pdf",
         "doc_type": "Brochure",
-        "question": "Who is Amy? ",
+        "question": "What is the position of Amy?",
         "answer": "Not answerable",
         "evidence_pages": "[]",
         "evidence_sources": "[]",
@@ -8670,10 +8643,10 @@
         "doc_id": "disciplined-agile-business-analysis-160218012713_95.pdf",
         "doc_type": "Tutorial/Workshop",
         "question": "How many blue arrows are part of the DISCIPLINED AGILE logo?",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
+        "answer": "0",
+        "evidence_pages": "[1]",
+        "evidence_sources": "['Figure']",
+        "answer_format": "Int"
     },
     {
         "doc_id": "disciplined-agile-business-analysis-160218012713_95.pdf",
@@ -8692,15 +8665,6 @@
         "evidence_pages": "[39]",
         "evidence_sources": "['Figure']",
         "answer_format": "Int"
-    },
-    {
-        "doc_id": "disciplined-agile-business-analysis-160218012713_95.pdf",
-        "doc_type": "Tutorial/Workshop",
-        "question": "How many different Japanese characters are shown in slide?",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
     },
     {
         "doc_id": "disciplined-agile-business-analysis-160218012713_95.pdf",
@@ -8741,24 +8705,6 @@
     {
         "doc_id": "2310.09158v1.pdf",
         "doc_type": "Academic paper",
-        "question": "According to the paper, there are five different relation types between two events.",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
-    },
-    {
-        "doc_id": "2310.09158v1.pdf",
-        "doc_type": "Academic paper",
-        "question": "The authors propose four different solutions for logical reasoning of LLMs.",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
-    },
-    {
-        "doc_id": "2310.09158v1.pdf",
-        "doc_type": "Academic paper",
         "question": "Which baseline did the pre-trained Vicuna-13B perform best on MAVEN-ERE?",
         "answer": "CoT w. logical constraints ",
         "evidence_pages": "[8]",
@@ -8777,15 +8723,6 @@
     {
         "doc_id": "2312.04350v3.pdf",
         "doc_type": "Academic paper",
-        "question": "the author divide causal inference into 5 key steps.",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
-    },
-    {
-        "doc_id": "2312.04350v3.pdf",
-        "doc_type": "Academic paper",
         "question": "What subskill does we need to collect the available data?",
         "answer": "semantic parsing",
         "evidence_pages": "[2]",
@@ -8800,15 +8737,6 @@
         "evidence_pages": "[3]",
         "evidence_sources": "['Pure-text (Plain-text)']",
         "answer_format": "Str"
-    },
-    {
-        "doc_id": "2312.04350v3.pdf",
-        "doc_type": "Academic paper",
-        "question": "There are four different rungs for the ladder of causation",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
     },
     {
         "doc_id": "2312.04350v3.pdf",
@@ -9047,15 +8975,6 @@
     {
         "doc_id": "2021-Apple-Catalog.pdf",
         "doc_type": "Brochure",
-        "question": "Are there 11 different iPad solutions shown in the document?",
-        "answer": "Not answerable",
-        "evidence_pages": "[]",
-        "evidence_sources": "[]",
-        "answer_format": "None"
-    },
-    {
-        "doc_id": "2021-Apple-Catalog.pdf",
-        "doc_type": "Brochure",
         "question": "Regarding macbook high security solution, which numbers of features are not presented in the illustration?",
         "answer": "4",
         "evidence_pages": "[22]",
@@ -9110,7 +9029,7 @@
     {
         "doc_id": "ACTIVISIONBLIZZARD_2019_10K.pdf",
         "doc_type": "Financial report",
-        "question": "what value stock does Activsion Blizzard repurchase in FY2019?Answer in USD billion\n",
+        "question": "what value stock does Activsion Blizzard repurchase in FY2019? Answer in USD billion\n",
         "answer": "0",
         "evidence_pages": "[29]",
         "evidence_sources": "['Pure-text (Plain-text)']",
