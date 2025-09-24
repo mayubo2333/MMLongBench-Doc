@@ -1192,7 +1192,7 @@
         "doc_type": "Research report / Introduction",
         "question": "What is the telephone no for The Limes Residential Home?",
         "answer": "01983 873655",
-        "evidence_pages": "[0]",
+        "evidence_pages": "[1]",
         "evidence_sources": "['Pure-text (Plain-text)']",
         "answer_format": "Str"
     },
@@ -5132,9 +5132,9 @@
     {
         "doc_id": "PS_2018.01.09_STEM_FINAL.pdf",
         "doc_type": "Research report / Introduction",
-        "question": "What is the percentage of a particular racial group among STEM workers who report the highest incidence of being denied promotions and also perceive the lowest opportunities for promotion and advancement, as well as in recruitment and hiring processes in the survey of Pew Research Center, January 2018?",
+        "question": "A particular racial group was treated least fairly in opportunities for promotion and advancement, as well as in recruitment and hiring processes in the survey of Pew Research Center, January 2018. What is the percentage of this group been denied a promotion in STEM jobs?",
         "answer": "14%",
-        "evidence_pages": "[82, 121]",
+        "evidence_pages": "[78, 82]",
         "evidence_sources": "['Table', 'Chart', 'Pure-text (Plain-text)']",
         "answer_format": "Float"
     },
