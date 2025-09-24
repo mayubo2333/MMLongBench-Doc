@@ -11,7 +11,7 @@
     ·
     <a href="https://yzjiao.github.io/"><strong>Yizhu Jiao</strong></a>
     ·
-    <strong>Xinze Li</strong>
+    <a href="https://lixinze777.github.io/"><strong>Xinze Li</strong></a>
     ·
      <a href="https://xinyuanlu00.github.io"><strong>Xinyuan Lu</strong></a>
       ·
