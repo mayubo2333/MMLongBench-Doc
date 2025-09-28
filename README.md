@@ -34,7 +34,7 @@
     <a href="https://personal.ntu.edu.sg/axsun/"><strong>Aixin Sun</strong></a>
   </p>
   <!-- <h2 align="center">Submitted to arXiv</h2> -->
-  📖<a href="https://arxiv.org/abs/2407.01523">Paper</a> |🏠<a href="https://mayubo2333.github.io/MMLongBench-Doc/">Homepage</a></h3>|🤗<a href="https://huggingface.co/datasets/yubo2333/MMLongBench-Doc">Huggingface</a></h3>
+  📖<a href="https://arxiv.org/abs/2407.01523">Paper</a> |🏠<a href="https://mayubo2333.github.io/MMLongBench-Doc/">Homepage</a></h3>|🤗<a href="https://huggingface.co/datasets/yubo2333/MMLongBench-Doc">Huggingface</a></h3>|🏅<a href="https://huggingface.co/spaces/OpenIXCLab/mmlongbench-doc">Leaderboard</a></h3>
 <div align="center"></div>
 <p align="center">
   <p>
@@ -47,11 +47,13 @@ To bridge this gap, we construct <strong>MMLongBench-Doc</strong> which comprise
 <br>
 
 ## 📢 News
+- 🚀 [09/2025] We further [refine and update the Q&As](https://github.com/mayubo2333/MMLongBench-Doc/commit/a5cf96739db16fc9b339f93477396ead74ba44ff), and release the 🏅[Leaderboard](https://huggingface.co/spaces/OpenIXCLab/mmlongbench-doc).
 - 🚀 [07/2024] We further refine and update the questions in MMLongBench-Doc!
 - 🚀 [07/2024] We have integrated MMLongBench-Doc to evaluation toolkit [VLMEvalKit](https://github.com/open-compass/VLMEvalKit), providing a highly convenient testing solution!
 - 🚀 [06/2024] We upload MMLongBench-Doc to huggingface.
 
 ## 💡 Highlights
+- ✨ Various awesome works use MMLongBench-Doc for evaluating their long-context document understanding ability, including [Qwen3-VL](https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct), [GLM-4.5-V](https://arxiv.org/pdf/2507.01006), [Kimi-VL](https://arxiv.org/pdf/2504.07491), [MiniMax-01](https://arxiv.org/pdf/2501.08313), and [Aria](https://arxiv.org/pdf/2410.05993).
 - 🔥 **Multi-modality**: All selected documents are PDF-formatted with rich layouts and multi-modal components including text, table, chart and image. We annotate questions carefully from these multi-modal evidences.
 - 🔥 **Long-context**: Each document has an average of 47.5 pages and 21,214 tokens. Additionally, 33.0% of the questions are cross-page questions which necessitate the information collection and reasoning over multiple pages.
 - 🔥 **Challenging**: Experiments on 14 LVLMs demonstrate that long-context document understanding greatly challenges current models. Even the best-performing LVLM, GPT-4o, achieves an overall F1 score of only 44.9%.
